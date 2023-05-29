@@ -1,6 +1,17 @@
 package com.spring.project.g.photo.clone.Modal;
 
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
 public class Photo {
+
+
+
+    private String id;
+
+    @NotEmpty
+    private String fileName;
+
 
     //empty constructor
     public Photo(){}
@@ -9,9 +20,6 @@ public class Photo {
         this.id = id;
         this.fileName = fileName;
     }
-
-    private String id;
-    private String fileName;
 
     public String getId() {
         return id;
