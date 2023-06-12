@@ -16,6 +16,10 @@ public class Photo {
     @JsonIgnore
     private byte[] data;
 
+    private String contentType;
+
+
+
 
 
     //empty constructor
@@ -39,6 +43,10 @@ public class Photo {
         return fileName;
     }
 
+    public String getContentType() {
+        return contentType;
+    }
+
     public void setId(String id) {
         this.id = id;
     }
@@ -52,5 +60,8 @@ public class Photo {
         this.data = data;
     }
 
+    public void setContentType(String contentType) {
+        this.contentType = contentType;
+    }
 }
 
